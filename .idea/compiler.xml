@@ -9,5 +9,8 @@
         <module name="foodStore" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="foodStore" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
