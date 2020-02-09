@@ -54,14 +54,14 @@ public class CartView implements ICartView {
             System.out.print(innerSpaces);
 
             innerSpaces = "";
-            System.out.print("|"+product.getQuantity());
-            for(int i=0;i<cellLength-(product.getQuantity()+"").length();i++)
+            System.out.print("|"+1);
+            for(int i=0;i<cellLength-(1+"").length();i++)
                 innerSpaces+=" ";
             System.out.print(innerSpaces);
 
             innerSpaces = "";
             System.out.print("|"+(product.getIsDiscounted() == true ? product.getDiscountedPrice():product.getPrice()));
-            for(int i=0;i<cellLength-(product.getQuantity()+"").length();i++)
+            for(int i=0;i<cellLength-(1+"").length();i++)
                 innerSpaces+=" ";
             System.out.print(innerSpaces+"|");
             System.out.println();

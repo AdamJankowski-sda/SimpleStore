@@ -13,5 +13,11 @@ public class Banana implements IProduct {
     private Double Price;
     private Boolean IsDiscounted;
     private Double DiscountedPrice;
-    private Integer Quantity;
+    private ProductType productType;
+    private String imagePath;
+
+    @Override
+    public String toString(){
+        return "Name: "+Name+", discount: "+IsDiscounted.toString()+", price: "+(IsDiscounted ? DiscountedPrice : Price);
+    }
 }

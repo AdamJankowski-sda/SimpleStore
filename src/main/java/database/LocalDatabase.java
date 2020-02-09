@@ -5,6 +5,7 @@ import interfaces.IProduct;
 import interfaces.IUser;
 import product.Apple;
 import product.Banana;
+import product.ProductType;
 import user.User;
 
 import java.util.ArrayList;
@@ -16,8 +17,12 @@ public class LocalDatabase implements IDatabase {
     @Override
     public List<IProduct> getProducts() {
         return new ArrayList<>(){{
-            add(new Banana("Banana",4.50,false,3.50,500));
-            add(new Apple("Apple",3.0,false,2.20,300));
+            add(new Banana("Banana",4.50,false,3.50, ProductType.Banana,"C:\\Users\\adico\\OneDrive\\Pulpit\\Files\\TacticalFolder\\fotsy\\praca.png"));
+            add(new Banana("Banana",4.50,false,3.50, ProductType.Banana,"C:\\Users\\adico\\OneDrive\\Pulpit\\Files\\TacticalFolder\\fotsy\\praca.png"));
+            add(new Banana("Banana",4.50,false,3.50, ProductType.Banana,"C:\\Users\\adico\\OneDrive\\Pulpit\\Files\\TacticalFolder\\fotsy\\praca.png"));
+            add(new Banana("Banana",4.50,false,3.50, ProductType.Banana,"C:\\Users\\adico\\OneDrive\\Pulpit\\Files\\TacticalFolder\\fotsy\\praca.png"));
+            add(new Apple("Apple",3.0,true,2.20,ProductType.Apple,"C:\\Users\\adico\\OneDrive\\Pulpit\\Files\\TacticalFolder\\img\\petscards\\PetsCards_png\\pet_a_hen1.png"));
+            add(new Apple("Apple",3.0,true,2.20,ProductType.Apple,"C:\\Users\\adico\\OneDrive\\Pulpit\\Files\\TacticalFolder\\img\\petscards\\PetsCards_png\\pet_a_hen1.png"));
         }};
     }
 

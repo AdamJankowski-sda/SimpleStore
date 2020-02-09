@@ -62,8 +62,8 @@ public class StoreView implements IStoreView {
 
             innerSpace="";
 
-            System.out.print("|"+product.getQuantity());
-            for (int i=0;i<cellWidth - (""+product.getQuantity()).length();i++ )
+            System.out.print("|"+1);
+            for (int i=0;i<cellWidth - (""+1).length();i++ )
                 innerSpace+=" ";
             System.out.print(innerSpace);
 
